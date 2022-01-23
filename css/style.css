@@ -203,7 +203,7 @@ body{
 /*==================== CALCULATOR ====================*/
 
 .form-box {
-    width: 300px;
+    width: 325px;
     padding: 40px;
     background: var(--first-color);
     border-radius: .5rem;
@@ -211,7 +211,8 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.form-box input[type="number"], .form-box button[type="button"] {
+.form-box input[type="number"]{
+    font-family: 'Poppins', sans-serif;
     border: 0;
     background: none;
     display: block;
@@ -219,7 +220,7 @@ body{
     text-align: center;
     border: 2px solid var(--first-color-alt);
     padding: 14px 10px;
-    width: 200px;
+    width: 150px;
     outline: none;
     color: white;
     border-radius: .5rem;
@@ -227,33 +228,23 @@ body{
 }
 .form-box button[type="button"] {
     border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
     text-align: center;
-    width: 50%;
-    outline: none;
-    color: white;
-    border-radius: .5rem;
-    transition: 0.25s;
-}
-
-.form-box input[type="number"]:focus{
-    width: 250px;
-    border-color: #ffffff;
-}
-
-.form-box button[type="button"] {
+    font-family: 'Poppins', sans-serif;
     background: var(--first-color);
     display: inline;
     margin: 10px auto;
-    width: 50%;
+    width: 49%;
     padding: 14px 40px;
     outline: none;
     color: white;
     border-radius: .5rem;
     transition: 0.25s;
     cursor: pointer;
+}
+
+.form-box input[type="number"]:focus{
+    width: 200px;
+    border-color: #ffffff;
 }
 
 .form-box button[type="button"]:hover {
