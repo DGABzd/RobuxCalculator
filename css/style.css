@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap');
 
 /*==================== VARIABLES CSS ====================*/
-:root{
+:root {
     --header-height: 3rem;
     /* -> main colors <- */
     --hue-color: 353;
@@ -48,18 +48,19 @@
     --z-fixed: 100;
     --z-modal: 1000;
 }
+
 /*==================== DEFAULT BASE ====================*/
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -67,24 +68,28 @@ body{
     color: var(--text-color);
 }
 
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
-body{
+
+body {
     /* -> second colors <- */
     transition: .3s;
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -94,8 +99,9 @@ body{
     --body-color: hsl(214, 7%, 19%);
     --container-color: hsl(214, 7%, 19%);
 }
+
 /*==================== NAV ====================*/
-.nav{
+.nav {
     max-width: 968px;
     height: var(--header-height);
     display: flex;
@@ -103,27 +109,29 @@ body{
     align-items: center;
 }
 
-.nav__logo, .nav__toggle{
+.nav__logo,
+.nav__toggle {
     color: var(--title-color);
     margin-left: var(--mb-0-5);
     font-weight: var(--font-medium);
 }
 
-.nav__logo, .nav__toggle:hover{
+.nav__logo,
+.nav__toggle:hover {
     color: var(--first-color);
 }
 
-.nav__menu-show{
+.nav__menu-show {
     color: var(--title-color);
     margin-right: var(--mb-0-5);
     font-size: var(--h3-font-size);
 }
 
-.nav__menu-show:hover{
+.nav__menu-show:hover {
     color: var(--first-color);
 }
 
-.nav__menu-hide{
+.nav__menu-hide {
     right: 0;
     position: absolute;
     display: inline-block;
@@ -132,17 +140,17 @@ body{
     font-size: var(--h1-font-size);
 }
 
-.nav__toggle{
+.nav__toggle {
     font-size: 1.1rem;
     cursor: pointer;
 }
 
-.nav__list{
+.nav__list {
     grid-template-columns: auto auto auto auto;
     gap: 2rem;
 }
 
-.nav__link{
+.nav__link {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -152,43 +160,39 @@ body{
     margin: 0 .5rem;
 }
 
-.nav__link:hover{
+.nav__link:hover {
     color: var(--first-color);
 }
 
-.nav__ico{
+.nav__ico {
     font-size: 1.2rem;
 }
 
-.nav__link-active{
+.nav__link-active {
     color: var(--first-color);
 }
+
 /*==================== HOME ====================*/
-.home__container
-{
+.home__container {
     gap: 1rem;
 }
 
-.home__content
-{
+.home__content {
     grid-template-columns: .5fr 3fr;
     padding-top: 3.5rem;
     align-items: center;
 }
 
-.home__data
-{
+.home__data {
     grid-column: 1/3;
 }
 
-.home__title
-{
+.home__title {
     font-size: var(--big-font-size);
     text-align: center;
 }
 
-.home__subtitle
-{
+.home__subtitle {
     font-size: var(--h3-font-size);
     color: var(--text-color);
     font-weight: var(--font-medium);
@@ -196,10 +200,10 @@ body{
     text-align: center;
 }
 
-.home__description
-{
+.home__description {
     margin-bottom: var(--mb-2);
 }
+
 /*==================== CALCULATOR ====================*/
 
 .form-box {
@@ -211,7 +215,8 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.form-box input[type="number"]{
+
+.form-box input[type="number"] {
     font-family: 'Poppins', sans-serif;
     border: 0;
     background: none;
@@ -226,6 +231,7 @@ body{
     border-radius: .5rem;
     transition: 0.25s;
 }
+
 .form-box button[type="button"] {
     border: 0;
     text-align: center;
@@ -242,7 +248,7 @@ body{
     cursor: pointer;
 }
 
-.form-box input[type="number"]:focus{
+.form-box input[type="number"]:focus {
     width: 200px;
     border-color: #ffffff;
 }
@@ -252,8 +258,7 @@ body{
 }
 
 
-.button
-{
+.button {
     display: inline-block;
     background-color: var(--first-color);
     color: #fff;
@@ -262,21 +267,18 @@ body{
     font-weight: var(--font-medium);
 }
 
-.button:hover
-{
+.button:hover {
     background-color: var(--first-color-alt);
 }
 
-.button__icon
-{
+.button__icon {
     font-size: 1.25rem;
     display: inline-block;
     margin-left: var(--mb-0-5);
     transition: .3s;
 }
 
-.button--flex
-{
+.button--flex {
     display: inline-block;
     align-items: center;
 }
