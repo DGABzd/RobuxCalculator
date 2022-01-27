@@ -5,7 +5,7 @@
 :root {
     --header-height: 3rem;
     /* -> main colors <- */
-    --hue-color: 353;
+    --hue-color: 222;
 
     /* -> second colors <- */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -249,7 +249,7 @@ body {
 }
 
 .form-box input[type="number"]:focus {
-    width: 200px;
+    width: 175px;
     border-color: #ffffff;
 }
 
